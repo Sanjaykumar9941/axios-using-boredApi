@@ -12,12 +12,20 @@ html {
 /* ------------ */
 body {
   font-family: monospace;
-  height: 100%;
-  background-image: url(../24\ seamless-repeating-background-tile-terryfic3d.jpg);
+ 
+  background-image: url("../2.24\ seamless-repeating-background-tile-terryfic3d.webp")
 }
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: url('../2\ blackboard-texture-black-background-d4c51507f272f5a917a960440952b3d1.webp');
+    
+  }
+}
+
 h1 {
-  
-  font-size: 4rem;
+  margin-top: 50px;
+  font-size: 3rem;
+  color: red;
   justify-content: space-between;
   
   width: 100%;
@@ -42,10 +50,12 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 80px;
   grid-column-gap: 10px;
+  
 
 }
 .form-submit {
   outline: none;
+  color: yellow;
   border: 1px solid rgb(232, 232, 232);
   background-color: rgb(195, 14, 14);
   border-radius: 20px;
@@ -104,22 +114,3 @@ h1 {
     grid-gap: 10px;
   }
 }
-h1{ color: yellow;
-  -webkit-box-flex: below 1px linear-gradiant(transparent);
-  line-height: 0.70em;
-  outline: none;
-  animation: animate 5s linear infinite;
-  }
-  @keyframes animate {
-      0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
-          color: #0e3742; text-shadow: none;
-      }
-      18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
-          color: #fff;
-          text-shadow: 0 0 10px #03bcf4,
-          0 0 20px #03bcf4,
-          0 0 40px #03bcf4,
-          0 0 80px #03bcf4,
-          0 0 160px #03bcf4;
-      }
-  }
